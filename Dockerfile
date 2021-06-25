@@ -1,0 +1,5 @@
+ARG CENTOS_VERSION=8.3.2011
+
+FROM centos:$CENTOS_VERSION
+
+CMD ["/usr/sbin/init"]
