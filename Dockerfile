@@ -17,4 +17,8 @@ RUN wget -qO- "https://nodejs.org/dist/v$NODEJS_VERSION/node-v$NODEJS_VERSION.ta
     && node --version \
     && npm --version
 
+WORKDIR /
+
+RUN rm -rf /tmp/build
+
 CMD ["/usr/sbin/init"]
