@@ -3,6 +3,7 @@ ARG NODEJS_VERSION=14.17.1
 
 FROM centos:$CENTOS_VERSION
 
+RUN dnf -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
 RUN dnf -y upgrade
 RUN dnf -y install gcc-c++ make python3 wget 
 
