@@ -5,7 +5,11 @@ FROM centos:$CENTOS_VERSION
 
 RUN dnf -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
 RUN dnf -y upgrade
-RUN dnf -y install gcc-c++ make python3 wget 
+RUN dnf -y install \
+    gcc-c++ \
+    make \
+    python3 \
+    wget
 
 WORKDIR /tmp/build
 
